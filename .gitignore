@@ -1,0 +1,6 @@
+dist
+/node_modules
+/render/dist-main
+package-lock.json
+yarn.lock
+
