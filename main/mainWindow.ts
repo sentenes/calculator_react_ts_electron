@@ -6,8 +6,10 @@ let win: BrowserWindow;
 
 export function create() {
     win = new BrowserWindow({
-        width: 600,
-        height: 600,
+        width: 230,
+        height: 320,
+
+        // resizable:false,
         webPreferences: {               // 网页功能设置
             nodeIntegration: true,      // 是否在node工作器中启用工作集成默认false
             enableRemoteModule: true,   // 是否启用remote模块默认false

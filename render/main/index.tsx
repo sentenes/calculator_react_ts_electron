@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import ReactDom from "react-dom"
+import {App} from "./page/App";
+import 'antd/dist/antd.css';
 
-const App = () => {
-    return <div>
-        <div>hello react</div>
-    </div>
-}
-ReactDom.render(<App></App>, document.getElementById("root"))
+
+ReactDom.render(
+    <App/>
+    , document.getElementById("root"))
 

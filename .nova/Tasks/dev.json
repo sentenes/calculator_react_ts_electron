@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "yarn start:react &\nyarn dev:main &\nwhile True\ndo \n\t\/usr\/bin\/nc -w 1 -z localhost 8080 > \/dev\/null 2>&1\n\tif [ $? -eq 0 ]\n\tthen \n\t\tyarn start:electron &\n\t\tbreak;\n\telse \n\t\tsleep 1\n\tfi\ndone\n\nwait\n\n"
+    }
+  },
+  "identifier" : "16FD6F40-980F-4A29-93DC-0BC5021A9A76",
+  "openLogOnRun" : "start"
+}

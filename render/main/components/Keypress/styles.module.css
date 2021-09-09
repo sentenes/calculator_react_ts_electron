@@ -1,0 +1,42 @@
+.keyContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.keyText {
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    flex: 1;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    line-height: 46px;
+}
+
+.normal {
+    font-size: 20px;
+}
+
+.normal.keyText:active {
+    background-color: #B1B1B1 !important;
+}
+
+.function {
+    font-size: 18px;
+}
+
+.function.keyText:active {
+    background-color: #7D7D7D !important;
+}
+
+.operator {
+    font-size: 18px;
+}
+
+.operator.keyText:active {
+    background-color: #CB7D07 !important;
+}
